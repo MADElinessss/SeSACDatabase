@@ -18,6 +18,7 @@
 		C1BC97C62B7304E40083E181 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C1BC97C52B7304E40083E181 /* Kingfisher */; };
 		C1BC97F92B730FAB0083E181 /* SeSACUIFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1BC97F52B730F430083E181 /* SeSACUIFramework.framework */; };
 		C1BC97FA2B730FAB0083E181 /* SeSACUIFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1BC97F52B730F430083E181 /* SeSACUIFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C1BC97FD2B732EDA0083E181 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BC97FC2B732EDA0083E181 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		C1BC97B62B73043D0083E181 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1BC97B82B73043D0083E181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1BC97EF2B730F430083E181 /* SeSACUIFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SeSACUIFramework.xcodeproj; path = ../SeSACUIFramework/SeSACUIFramework.xcodeproj; sourceTree = "<group>"; };
+		C1BC97FC2B732EDA0083E181 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				C1BC97AA2B73043C0083E181 /* AppDelegate.swift */,
 				C1BC97AC2B73043C0083E181 /* SceneDelegate.swift */,
+				C1BC97FC2B732EDA0083E181 /* DetailViewController.swift */,
 				C1BC97AE2B73043C0083E181 /* ViewController.swift */,
 				C1BC97B02B73043C0083E181 /* Main.storyboard */,
 				C1BC97B32B73043D0083E181 /* Assets.xcassets */,
@@ -234,6 +237,7 @@
 				C1BC97AF2B73043C0083E181 /* ViewController.swift in Sources */,
 				C1BC97AB2B73043C0083E181 /* AppDelegate.swift in Sources */,
 				C1BC97AD2B73043C0083E181 /* SceneDelegate.swift in Sources */,
+				C1BC97FD2B732EDA0083E181 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

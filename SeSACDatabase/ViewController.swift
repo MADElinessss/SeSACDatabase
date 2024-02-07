@@ -10,26 +10,30 @@ import SeSACUIFramework
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var nicknameLabel: UILabel!
+    @IBOutlet weak var numberLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let a = SeSACPublic()
-        
-        let b = SeSACOpen()
-        
-        b.name
-        b.welcome()
-       
+
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    @IBAction func nicknameButtonTapped(_ sender: UIButton) {
+        let viewController = DetailViewController()
+        // 기존 값전달 방법
+//        viewController.nicknameSpace = "홈런볼"
         
-        // 다른 모듈에 들어있는 showAlert -> import해주고, open, pulic 접근제어자로 되어 있는 애들을 갖다 씀
-        // 모듈화 -> 이런 맥락임
-        showAlert(title: "🚨", message: "삐용삐용", buttonTitle: "알람") { action in
-            print("알라미")
+        // 클로저
+        viewController.nicknameSpace = { value in
+            // value(String) -> Void
+            self.nicknameLabel.text = value
         }
+        
+        present(viewController, animated: true)
+    }
+    
+    @IBAction func numberButtonTapped(_ sender: UIButton) {
+        
     }
 }
 
